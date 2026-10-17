@@ -73,6 +73,8 @@ Testes de DOM e build não substituem uma inspeção visual no navegador. Consul
 
 ## Publicação na Vercel
 
+O arquivo `vercel.json` declara Vite, instalação com `npm ci`, build com `npm run build` e saída `dist`. No painel, a Root Directory deve apontar para a pasta que contém `package.json`, `index.html` e `src/`.
+
 1. Execute os testes e o build.
 2. Importe o repositório na Vercel, selecionando Vite.
 3. Configure `npm run build` e diretório de saída `dist`.
@@ -80,3 +82,7 @@ Testes de DOM e build não substituem uma inspeção visual no navegador. Consul
 5. Depois de definir o domínio, preencha `siteUrl` e prepare sitemap e imagem Open Graph com URLs reais.
 
 Nenhuma publicação foi executada. Fontes e ícones usam Google Fonts e Bootstrap Icons via CDN; as capturas são locais.
+
+### Erro: Failed to resolve ./src/scripts/main.js
+
+Esse erro indica que o build não encontrou o módulo indicado no HTML. Confirme no repositório e na branch usados pela Vercel a existência de `src/scripts/main.js`, exatamente com essas letras minúsculas. Envie a pasta `src/` completa e `public/`, além dos arquivos da raiz; não envie apenas os HTMLs ou apenas `dist/` para um projeto configurado para executar o build. Se o repositório tiver uma pasta externa envolvendo o projeto, ajuste a Root Directory para ela. Depois de enviar os arquivos, faça um novo deploy do commit atualizado.
