@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0B0D11" />
+    <title>Francisco Loureiro — Desenvolvimento web</title>
+    <meta
+      name="description"
+      content="Francisco Loureiro, desenvolvedor web e estudante de Engenharia de Software. Sites, catálogos e experiências digitais com identidade."
+    />
+    <meta property="og:title" content="Francisco Loureiro — Desenvolvimento web" />
+    <meta
+      property="og:description"
+      content="Tecnologia, identidade e atenção aos detalhes. Conheça meus projetos."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./src/styles/editorial.css" />
+    <link rel="stylesheet" href="./src/styles/home.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="header reference-header">
+      <a class="brand" href="./index.html#inicio" aria-label="Francisco Loureiro, início">
+        <span class="logo">FL<span>.</span></span>
+        <span class="brand-signature">FRANCISCO LOUREIRO<br />DESENVOLVEDOR WEB</span>
+      </a>
+      <nav id="navigation" aria-label="Principal">
+        <a href="./index.html#inicio" class="active"><span class="nav-number">01</span>Início</a>
+        <a href="./index.html#projetos"><span class="nav-number">02</span>Projetos</a>
+        <a href="./index.html#sobre"><span class="nav-number">03</span>Sobre</a>
+        <a href="./index.html#servicos"><span class="nav-number">04</span>Serviços</a>
+        <a href="./index.html#contato"><span class="nav-number">05</span>Contato</a>
+      </nav>
+      <a class="header-cta" href="./index.html#contato"
+        >Vamos conversar <i class="bi bi-arrow-up-right" aria-hidden="true"></i
+      ></a>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="navigation"
+        aria-label="Abrir menu"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <main id="main"><p class="page-loading">Carregando projeto…</p></main>
+    <footer>
+      <a class="logo" href="./index.html#inicio">FL<span>.</span></a>
+      <p>© <span id="year">2026</span> Francisco Loureiro</p>
+      <a href="./index.html#inicio">De volta ao topo ↑</a>
+    </footer>
+    <noscript
+      ><p class="noscript">
+        Ative o JavaScript para visualizar os projetos e os contatos. As demais seções permanecem
+        disponíveis.
+      </p></noscript
+    >
+    <script type="module" src="./src/scripts/main.js"></script>
+  </body>
+</html>

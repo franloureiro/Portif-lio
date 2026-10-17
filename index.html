@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0B0D11" />
+    <title>Francisco Loureiro — Desenvolvimento web</title>
+    <meta
+      name="description"
+      content="Francisco Loureiro, desenvolvedor web e estudante de Engenharia de Software. Sites, catálogos e experiências digitais com identidade."
+    />
+    <meta property="og:title" content="Francisco Loureiro — Desenvolvimento web" />
+    <meta
+      property="og:description"
+      content="Tecnologia, identidade e atenção aos detalhes. Conheça meus projetos."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./src/styles/editorial.css" />
+    <link rel="stylesheet" href="./src/styles/home.css" />
+  </head>
+  <body class="home-page">
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="header reference-header">
+      <a class="brand" href="./index.html#inicio" aria-label="Francisco Loureiro, início">
+        <span class="logo">FL<span>.</span></span>
+        <span class="brand-signature">FRANCISCO LOUREIRO<br />DESENVOLVEDOR WEB</span>
+      </a>
+      <nav id="navigation" aria-label="Principal">
+        <a href="./index.html#inicio" class="active"><span class="nav-number">01</span>Início</a>
+        <a href="./index.html#projetos"><span class="nav-number">02</span>Projetos</a>
+        <a href="./index.html#sobre"><span class="nav-number">03</span>Sobre</a>
+        <a href="./index.html#servicos"><span class="nav-number">04</span>Serviços</a>
+        <a href="./index.html#contato"><span class="nav-number">05</span>Contato</a>
+      </nav>
+      <a class="header-cta" href="./index.html#contato"
+        >Vamos conversar <i class="bi bi-arrow-up-right" aria-hidden="true"></i
+      ></a>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="navigation"
+        aria-label="Abrir menu"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <main id="main">
+      <section id="inicio" class="hero-stage" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <span>[ 01 ]</span>
+            <p>PROJETOS SELECIONADOS / <strong>FRANCISCO LOUREIRO</strong></p>
+          </div>
+          <h1 id="hero-title">PROJETOS</h1>
+          <p class="hero-summary">
+            Transformo ideias em experiências digitais.<br />Sites, interfaces e código com<br />identidade
+            e propósito.
+          </p>
+          <a class="hero-explore" href="#projetos"
+            ><span class="explore-indicator" aria-hidden="true"></span>EXPLORAR PROJETOS<i
+              class="bi bi-arrow-up-right"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </div>
+        <aside class="hero-sidebar" aria-label="Contato e redes sociais">
+          <div id="hero-contact-links"></div>
+          <span class="hero-project-count" aria-label="3 projetos">03</span>
+        </aside>
+      </section>
+      <section id="projetos" class="section projects" data-view="list">
+        <div class="work-heading reveal">
+          <h2 class="projects-label">PROJETOS SELECIONADOS</h2>
+          <div class="view-controls" role="group" aria-label="Visualização dos projetos">
+            <button type="button" data-view="list" aria-pressed="true">Lista</button
+            ><button type="button" data-view="grid" aria-pressed="false">Grade</button>
+          </div>
+        </div>
+        <div class="work-caption">
+          <p>PROJETOS SELECIONADOS / FRANCISCO LOUREIRO</p>
+          <p>DESENVOLVIMENTO WEB<br />DO CONCEITO AO CÓDIGO</p>
+        </div>
+        <div id="project-list"></div>
+      </section>
+      <section id="sobre" class="section about">
+        <div class="about-marker" aria-hidden="true">
+          SOBRE O DESENVOLVEDOR<span>SEMPRE EM<br />CONSTRUÇÃO.</span>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">02 / SOBRE MIM</p>
+          <h2>TECNOLOGIA<br />COM <span>PROPÓSITO.</span></h2>
+          <p class="about-text">
+            Sou Francisco Loureiro, desenvolvedor web e estudante de Engenharia de Software na PUC-PR.
+            Transformo ideias em sites e soluções digitais que unem identidade, funcionalidade e
+            atenção aos detalhes, com foco em representar sua marca e criar uma navegação simples
+            para quem visita.
+          </p>
+          <p class="about-text">
+            Em cada etapa, busco a melhor estratégia de design visual para sua empresa, considerando
+            seu público, sua identidade e seus objetivos. Da escolha das cores à organização do
+            conteúdo, combino decisões de design com cuidado no código para construir uma presença
+            digital clara, profissional e consistente em diferentes telas.
+          </p>
+          <p class="small-label">TECNOLOGIAS QUE FAZEM PARTE DO MEU TRABALHO</p>
+          <div class="tech-list">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span
+            ><span>SQL</span>
+          </div>
+        </div>
+      </section>
+      <section id="servicos" class="section services">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">03 / COMO POSSO AJUDAR</p>
+            <h2>BOAS IDEIAS.<br /><span>SOLUÇÕES REAIS.</span></h2>
+          </div>
+          <p>Desenvolvimento com atenção<br />à sua marca e ao seu próximo passo.</p>
+        </div>
+        <div class="service-list">
+          <article class="service reveal">
+            <span>01</span>
+            <h3>Landing Pages</h3>
+            <p>Páginas de apresentação com foco em comunicação, experiência e conversão.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service reveal">
+            <span>02</span>
+            <h3>Sites Institucionais</h3>
+            <p>Presença digital profissional para empresas e marcas.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service reveal">
+            <span>03</span>
+            <h3>Catálogos Digitais</h3>
+            <p>Apresentação organizada de produtos e serviços, com integrações de contato.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service reveal">
+            <span>04</span>
+            <h3>Sistemas Web Sob Medida</h3>
+            <p>Soluções conforme as necessidades e a complexidade de cada projeto.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+        </div>
+      </section>
+      <section id="contato" class="section contact">
+        <p class="eyebrow reveal">04 / CONTATO — SEU PRÓXIMO PASSO NO DIGITAL</p>
+        <h2 class="reveal">
+          VAMOS CRIAR ALGO<br /><span>EXTRAORDINÁRIO?</span
+          ><span class="contact-arrow" aria-hidden="true">↗</span>
+        </h2>
+        <div class="contact-bottom">
+          <div class="contact-copy">
+            <p class="contact-lead">
+              Sua presença digital merece a mesma atenção que você dedica ao seu negócio. Desenvolvo
+              sites e soluções web que traduzem a identidade da sua marca em experiências claras,
+              funcionais e cuidadosas em cada detalhe.
+            </p>
+            <p>
+              Seja para apresentar seus serviços, organizar um catálogo ou desenvolver uma solução
+              sob medida, o primeiro passo é entender o que você precisa. Vamos conversar sobre seus
+              objetivos, seu público e o momento do seu projeto para definir um escopo coerente com
+              suas prioridades.
+            </p>
+            <p class="contact-invitation">
+              Conte-me o que você tem em mente. Compartilhe sua ideia, referências e o prazo
+              desejado pelo e-mail abaixo ou entre em contato pelo LinkedIn ou Instagram.
+            </p>
+          </div>
+          <div id="contact-links"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="./index.html#inicio">FL<span>.</span></a>
+      <p>© <span id="year">2026</span> Francisco Loureiro</p>
+      <a href="./index.html#inicio">De volta ao topo ↑</a>
+    </footer>
+    <noscript
+      ><p class="noscript">
+        Ative o JavaScript para visualizar os projetos e os contatos. As demais seções permanecem
+        disponíveis.
+      </p></noscript
+    >
+    <script type="module" src="./src/scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "francisco-loureiro-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test",
+    "format": "prettier --write src index.html projeto.html vite.config.js package.json tests",
+    "format:check": "prettier --check src index.html projeto.html vite.config.js package.json tests"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.13",
+    "prettier": "^3.5.3",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.7"
+  }
+}
